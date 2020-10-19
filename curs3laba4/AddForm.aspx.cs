@@ -38,10 +38,11 @@ namespace curs3laba4
         {
             var serv = new RefLibraryLast.ServiceForLibrarySoapClient();
             var all = serv.GetAllData().Tables[0];
-            var fdt = new DateTime();
-            var tdt = new DateTime();
-            if (DateTime.TryParse(TextBoxFrom.Text, out fdt) && DateTime.TryParse(TextBoxTo.Text, out tdt))
+            if (CalendarFrom.SelectedDate.ToShortDateString() != "01.01.0001"
+                && CalendarTo.SelectedDate.ToShortDateString() != "01.01.0001")
             {
+                var fdt = CalendarFrom.SelectedDate;
+                var tdt = CalendarTo.SelectedDate;
                 var o_id = int.Parse(TextID.Text);
                 var r_id = int.Parse(DropDownListReaders.Text.Split(';')[0]);
                 var b_id = int.Parse(DropDownListBooks.Text.Split(';')[0]);
@@ -82,14 +83,13 @@ namespace curs3laba4
                         return;
                     }
                 }
-                serv.NewRec(o_id,r_id,b_id,fdt,tdt);
+                serv.NewRec(o_id, r_id, b_id, fdt, tdt);
                 Label1.Text = "Запись успешно добавлена.";
                 Response.Redirect("~/ListForm.aspx");
             }
             else
             {
-                Label1.Text = "Ошибка при вводе срока на который взята книга";
-                return;
+                Label1.Text = "Ошибка! Дата выбрана неправильно или не выбрана вообще.";
             }
         }
     }

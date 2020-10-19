@@ -31,6 +31,15 @@ namespace curs3laba4 {
         protected global::System.Web.UI.WebControls.TextBox TextBoxFrom;
         
         /// <summary>
+        /// CalendarFrom элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar CalendarFrom;
+        
+        /// <summary>
         /// TextBoxTo элемент управления.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace curs3laba4 {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxTo;
+        
+        /// <summary>
+        /// CalendarTo элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar CalendarTo;
         
         /// <summary>
         /// ButtonDelete элемент управления.

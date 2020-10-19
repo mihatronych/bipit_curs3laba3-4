@@ -114,5 +114,15 @@ namespace curs3laba4
                 TextBoxTo.ReadOnly = false;
             }
         }
+
+        protected void CalendarFrom_SelectionChanged(object sender, EventArgs e)
+        {
+            TextBoxFrom.Text = CalendarFrom.SelectedDate.ToShortDateString();
+        }
+
+        protected void CalendarTo_SelectionChanged(object sender, EventArgs e)
+        {
+            TextBoxTo.Text = CalendarTo.SelectedDate.ToShortDateString();
+        }
     }
 }

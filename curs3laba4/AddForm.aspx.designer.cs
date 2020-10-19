@@ -40,22 +40,22 @@ namespace curs3laba4 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownListBooks;
         
         /// <summary>
-        /// TextBoxFrom элемент управления.
+        /// CalendarFrom элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxFrom;
+        protected global::System.Web.UI.WebControls.Calendar CalendarFrom;
         
         /// <summary>
-        /// TextBoxTo элемент управления.
+        /// CalendarTo элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxTo;
+        protected global::System.Web.UI.WebControls.Calendar CalendarTo;
         
         /// <summary>
         /// Button1 элемент управления.
@@ -74,14 +74,5 @@ namespace curs3laba4 {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
-        /// HyperLink3 элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
     }
 }
