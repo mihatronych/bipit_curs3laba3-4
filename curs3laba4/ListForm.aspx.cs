@@ -11,7 +11,7 @@ namespace curs3laba4
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ButtonGetDate_Click(sender, e);
+            //ButtonGetDate_Click(sender, e);
         }
 
         protected void ButtonGetDate_Click(object sender, EventArgs e)
@@ -123,6 +123,11 @@ namespace curs3laba4
         protected void CalendarTo_SelectionChanged(object sender, EventArgs e)
         {
             TextBoxTo.Text = CalendarTo.SelectedDate.ToShortDateString();
+        }
+
+        protected void ButtonGetDate_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ListForm.aspx");
         }
     }
 }

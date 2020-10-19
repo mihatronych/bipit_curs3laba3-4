@@ -18,11 +18,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="auto-style2" style="padding: 20px">
         <div class="auto-style3" style="position: fixed; width: 25%; height: 25%;">
-        <asp:Button ID="ButtonGetDate" runat="server" Text="Вывести все записи" BackColor="Lime" BorderStyle="Inset" OnClick="ButtonGetDate_Click" />
+        <asp:Button ID="ButtonGetDate" runat="server" Text="Вывести все записи" BackColor="Lime" BorderStyle="Inset" OnClick="ButtonGetDate_Click1" />
+            <br />
+        <asp:Button ID="ButtonGetDate0" runat="server" Text="Вывести фильтр. записи" BackColor="Lime" BorderStyle="Inset" OnClick="ButtonGetDate_Click" />
             <br />
         От:
             <asp:TextBox ID="TextBoxFrom" runat="server" Visible="False"></asp:TextBox>
-            <br />
             <asp:Calendar ID="CalendarFrom" runat="server" OnSelectionChanged="CalendarFrom_SelectionChanged"></asp:Calendar>
             <br />
         До:
