@@ -32,7 +32,7 @@
             <asp:Calendar ID="CalendarTo" runat="server" OnSelectionChanged="CalendarTo_SelectionChanged"></asp:Calendar>
         <asp:Button ID="ButtonDelete" runat="server" Text="Удалить выбранные" BackColor="Lime" BorderStyle="Inset" OnClick="ButtonDelete_Click" />
             <br />
-            <asp:Label ID="Label1" runat="server"></asp:Label>
+            <asp:Label ID="Label1" runat="server" ForeColor="Red"></asp:Label>
         </div>
         <div class="auto-style4" style="margin-left: 40%; ">
             <asp:GridView ID="GridView2" runat="server" Height="100%" Width="100%" BackColor="#FFFF66" CellPadding="4" DataSourceID="ObjectDataSource1" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="GridView2_SelectedIndexChanged">

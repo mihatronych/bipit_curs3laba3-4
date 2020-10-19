@@ -21,6 +21,7 @@ namespace curs3laba4
             var to = TextBoxTo.Text;
             if (from == "" && to == "")
             {
+                Label1.Text = "";
                 GridView2.DataSourceID = ObjectDataSource1.ID;
             }
             else if (from != "" && to != "")
@@ -31,7 +32,16 @@ namespace curs3laba4
                 {
                     if (DateTime.TryParse(to, out tdt))
                     {
-                        GridView2.DataSourceID = ObjectDataSource2.ID;
+                        if (fdt < tdt)
+                        {
+                            GridView2.DataSourceID = ObjectDataSource2.ID;
+                            Label1.Text = "";
+                        }
+                        else
+                        {
+                            Label1.Text = "Дата до меньше, чем дата от!";
+                            return;
+                        }
                     }
                     else
                     {
@@ -54,6 +64,7 @@ namespace curs3laba4
                     if (DateTime.TryParse(from, out fdt))
                     {
                         GridView2.DataSourceID = ObjectDataSource2.ID;
+                        Label1.Text = "";
                     }
                     else
                     {
@@ -100,7 +111,7 @@ namespace curs3laba4
                     service.DeleteRec(int.Parse(GridView2.Rows[i].Cells[1].Text));
                 }
             }
-            Label1.Text = "Записи успешно удалены";
+            //Label1.Text = "Записи успешно удалены";
         }
 
         protected void TextBoxFrom_TextChanged(object sender, EventArgs e)
