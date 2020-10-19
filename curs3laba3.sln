@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "curs3laba3", "curs3laba3\curs3laba3.csproj", "{B80F3972-BB52-4E9B-AD16-69DCC49D2951}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "curs3laba4", "curs3laba4\curs3laba4.csproj", "{B587A89C-F6D0-4EFB-A564-E57824E67111}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B80F3972-BB52-4E9B-AD16-69DCC49D2951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80F3972-BB52-4E9B-AD16-69DCC49D2951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80F3972-BB52-4E9B-AD16-69DCC49D2951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80F3972-BB52-4E9B-AD16-69DCC49D2951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B587A89C-F6D0-4EFB-A564-E57824E67111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B587A89C-F6D0-4EFB-A564-E57824E67111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B587A89C-F6D0-4EFB-A564-E57824E67111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B587A89C-F6D0-4EFB-A564-E57824E67111}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EB2FD7E-2250-4371-854B-A9B82045FD15}
+	EndGlobalSection
+EndGlobal

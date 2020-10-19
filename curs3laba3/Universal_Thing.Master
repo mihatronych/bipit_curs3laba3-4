@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Universal_Thing.master.cs" Inherits="curs3laba3.Universal_Thing" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 100%;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style1" style="background-color: #008080; padding-top: 10%; padding-left: 10%; padding-bottom: 20%; position: fixed;">
+            <asp:HyperLink ID="HyperLink1" runat="server" Font-Underline="True" NavigateUrl="~/Table1Form.aspx">Читатели</asp:HyperLink>
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink2" runat="server" Font-Underline="True" NavigateUrl="~/Table2Form.aspx">Книги</asp:HyperLink>
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink3" runat="server" Font-Underline="True" NavigateUrl="~/Table3Form.aspx">Выдачи</asp:HyperLink>
+        </div>
+        <div style="padding: 5%; background-color: #C0C0C0; position: relative; margin-left: 31%;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <p>
+        &nbsp;</p>
+</body>
+</html>
